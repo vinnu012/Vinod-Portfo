@@ -1,0 +1,338 @@
+body{
+    overflow-x: hidden;
+}
+/* ------------------------nav-bar---------------------------------- */
+#navbarSupportedContent a{
+    color: hsl(241, 40%, 42%);
+    font-size: 1.3rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+#navbarSupportedContent a:hover{
+    color: crimson;
+}
+#navbarSupportedContent li{
+    margin: 7px;
+}
+.nav-logo{
+    height: 80px;
+    width: 150px;
+}
+@media only screen and (max-width:768px){
+    #navbarSupportedContent li{
+        text-align: center;
+        margin: 1px;
+    }
+}
+/* ------------------------home-section---------------------------------- */
+.home-content .greeting{
+    font-size: 2.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.home-content .Name{
+    font-size: 2.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Name span{
+    font-family: cursive;
+    color: #daa520;
+}
+.home-content .profession{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.profession span{
+    color: rgb(251, 99, 4);
+    font-family: cursive;
+}
+#home-content .profession{
+    font-size: 2rem;
+    color: rgb(65, 131, 254);
+} 
+@media only screen and (max-width:768px){
+  
+}
+/* ------------------------about-section---------------------------------- */
+.row h1{
+    color: #daa520;
+    font-size: 2.5rem;
+    margin-top: -1rem;
+}
+.row h1 span{
+    font-family: cursive;
+    color: tomato;
+}
+.row p{
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.row p span{
+    font-family: cursive;
+}
+.row a button{
+    height: 2.5rem;
+    width: 12rem;
+    font-weight: bold;
+    font-family: cursive;
+    color:#ef3c00;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(12, 245, 176);
+}
+.w-60{
+    width: 60% !important;
+}
+@media only screen and (max-width:768px){
+    .row h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .row p{
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+}
+/* ------------------------skills-section---------------------------------- */
+#Skills-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#Skills-content h2{
+ font-size: 2.5rem;
+ text-align: center;
+ color: blue;
+}
+#Skills-content h2 span{
+    color:hwb(13 2% 12%);
+    font-family: serif;
+}
+.skills-set{
+ display: flex;
+ padding: 10px;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ padding: 20px 20%;
+}
+#icon{
+ 
+ padding: 20px 30px 20px 30px;
+ align-items: center;
+
+}
+.icon-img{
+ font-size: 4.5rem;
+ text-align: center;
+ border: 3px solid #fffbfb;
+ border-radius: 5px;
+ border-top-right-radius: 20px;
+ background-color: whitesmoke;
+ height: 110px;
+ width: 130px;
+ justify-content: center;
+ transition: transform 1s;
+}
+.icon-img i{
+ margin-top: -3px;
+}
+.icon-img:hover i{
+ transform: scale(1.2);
+
+} 
+.icon-text{
+ text-align: center;
+}
+
+
+/* ---------------------------------projects------------------------------------- */
+.Psub-title{
+    font-family: serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.Psub-title span{
+    color:#fa8908;
+}
+.Pro-container{
+    padding: 10px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 3rem;
+}
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  .flip-card-front, .flip-card-back, .pro{
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(179, 217, 206);
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color:aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: rotateY(180deg);
+  }
+  .pro{
+    width:400px;
+    height:300px;
+  }
+@media only screen and (max-width:768px){
+    .pro{
+        width:300px;
+        height:300px;
+      }
+    .flip-card {
+        width: 300px;
+        height: 300px;
+    }
+}
+/* ----------------------- contact-section------------------------------- */
+.c-row{
+    display: flex;
+}
+.sub-title{
+    font-size: 3rem;
+    font-family: serif;
+    color: brown;
+}
+.sub-title span{
+    color: rgb(245, 40, 4);
+}
+.c-row p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-family:monospace;
+}
+.input-field{
+    padding: 3px;
+}
+input{
+    border-radius: 5px;
+    border: solid 2px brown;
+    font-family: monospace;
+}
+input:hover{
+    box-shadow: 0 0 10px rgb(12, 245, 176);
+}
+textarea{
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    border: solid 2px brown;
+    font-family: monospace;
+}
+textarea:hover{
+    box-shadow: 0 0 10px rgb(12, 245, 176);
+}
+.btn-1{
+    width: 30%;
+    border-radius: 7px 2px 9px 4px;
+    margin: 10px;
+}
+.btn-1:hover{
+    box-shadow: 0 0 10px rgb(245, 12, 245);
+}
+.socialmedia-icons{
+    margin-top: -2.5rem;
+    font-size: 25px;
+    word-spacing: 15px;
+    margin-right: 8rem;
+  }
+  .socialmedia-icons a{
+    border-radius: 50%;
+    box-shadow: 0 0 0.5rem rosybrown;
+    background-color: rgba(245, 245, 245, 0.904);
+  } 
+@media only screen and (max-width:768px){
+    #contact-section{
+        margin: 3rem 0 0 0;
+    }
+    .c-row{
+        display: grid;
+        text-align: center;
+    }
+    .c-row h1{
+        font-size: 2.5rem;
+    }
+    .c-row p{
+        font-size: 1rem;
+    }
+    .socialmedia-icons{
+        display: flex;
+        margin: 1rem;
+        font-size: 25px;
+    }
+    .socialmedia-icons a{
+        justify-content: space-between;
+        
+    }
+    .btn-1{
+        margin-left: 0;
+    }
+    .socialmedia-icons{
+        margin-left: 7rem;
+    }
+}
+/* --------------footer------------------ */
+
+footer{
+    background-color: black;
+    text-align: center;
+  }
+  footer p{
+    color: white;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
